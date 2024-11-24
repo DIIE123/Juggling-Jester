@@ -642,56 +642,56 @@ public class Main extends JPanel implements MouseListener, KeyListener, Runnable
 		// Images
 		try {
 			// Images
-			startMenuImage = ImageIO.read(new File("MenuScreen.png"));
-			pauseMenuImage = ImageIO.read(new File("Pause.png"));
-			rules = ImageIO.read(new File("Rules.png"));
-			background = ImageIO.read(new File("background.png"));
-			end = ImageIO.read(new File("GameOver.png"));
+			startMenuImage = ImageIO.read(new File("Images/MenuScreen.png"));
+			pauseMenuImage = ImageIO.read(new File("Images/Pause.png"));
+			rules = ImageIO.read(new File("Images/Rules.png"));
+			background = ImageIO.read(new File("Images/background.png"));
+			end = ImageIO.read(new File("Images/GameOver.png"));
 			
-			onButton = ImageIO.read(new File("onButton.png"));
-			offButton = ImageIO.read(new File("offButton.png"));
+			onButton = ImageIO.read(new File("Images/onButton.png"));
+			offButton = ImageIO.read(new File("Images/offButton.png"));
 			
-			ball = ImageIO.read(new File("ball.png"));
-			bomb = ImageIO.read(new File("bomb.png"));
-			life = ImageIO.read(new File("life.png"));
+			ball = ImageIO.read(new File("Images/ball.png"));
+			bomb = ImageIO.read(new File("Images/bomb.png"));
+			life = ImageIO.read(new File("Images/life.png"));
 			
-			tomatoSplat = ImageIO.read(new File("TomatoSplat.png"));
-			stunImage = ImageIO.read(new File("Stun.png"));
-			invincibleImage = ImageIO.read(new File("Pretzel.png"));
+			tomatoSplat = ImageIO.read(new File("Images/TomatoSplat.png"));
+			stunImage = ImageIO.read(new File("Images/Stun.png"));
+			invincibleImage = ImageIO.read(new File("Images/Pretzel.png"));
 			
-			playerImage = ImageIO.read(new File("PlayerRight-1.png"));
+			playerImage = ImageIO.read(new File("Images/PlayerRight-1.png"));
 			for (int i = 0; i < 4; i++) {
-				playerRight[i] = ImageIO.read(new File("PlayerRight-" + (i+1) + ".png"));
-				playerLeft[i] = ImageIO.read(new File("PlayerLeft-" + (i+1) + ".png"));
+				playerRight[i] = ImageIO.read(new File("Images/PlayerRight-" + (i+1) + ".png"));
+				playerLeft[i] = ImageIO.read(new File("Images/PlayerLeft-" + (i+1) + ".png"));
 			}
 			
 			// Sound
-			AudioInputStream sound = AudioSystem.getAudioInputStream(new File ("titlescreen.wav"));
+			AudioInputStream sound = AudioSystem.getAudioInputStream(new File ("Sounds/titlescreen.wav"));
 			menuMusic = AudioSystem.getClip();
 			menuMusic.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("gamemusic.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/gamemusic.wav"));
 			gameMusic = AudioSystem.getClip();
 			gameMusic.open(sound);
 			
-			sound = AudioSystem.getAudioInputStream(new File ("Boing.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Boing.wav"));
 			bounce = AudioSystem.getClip();
 			bounce.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("Damage.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Damage.wav"));
 			hit = AudioSystem.getClip();
 			hit.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("Connect.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Connect.wav"));
 			apple = AudioSystem.getClip();
 			apple.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("Kick Drum.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Kick Drum.wav"));
 			watermelon = AudioSystem.getClip();
 			watermelon.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("Splat.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Splat.wav"));
 			tomato = AudioSystem.getClip();
 			tomato.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("Speed.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Speed.wav"));
 			candy = AudioSystem.getClip();
 			candy.open(sound);
-			sound = AudioSystem.getAudioInputStream(new File ("Invincible.wav"));
+			sound = AudioSystem.getAudioInputStream(new File ("Sounds/Invincible.wav"));
 			pretzel = AudioSystem.getClip();
 			pretzel.open(sound);
 		}
@@ -703,7 +703,7 @@ public class Main extends JPanel implements MouseListener, KeyListener, Runnable
 		JFrame frame = new JFrame("Juggling Jester");
 		Main panel = new Main(); 
 		frame.add(panel);
-		ImageIcon img = new ImageIcon("ball.png");
+		ImageIcon img = new ImageIcon("Images/ball.png");
 		frame.setIconImage(img.getImage());
 		frame.pack();
 		frame.setVisible(true);

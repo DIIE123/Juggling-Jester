@@ -20,19 +20,19 @@ public class PowerUp {
 		yVel = 0;
 		try {
 			if(t == 1) {
-				pic = Toolkit.getDefaultToolkit().getImage("CaramelApple.png");
+				pic = Toolkit.getDefaultToolkit().getImage("Images/CaramelApple.png");
 			}
 			else if(t == 2) {
-				pic = Toolkit.getDefaultToolkit().getImage("CottonCandy.png");
+				pic = Toolkit.getDefaultToolkit().getImage("Images/CottonCandy.png");
 			}
 			else if(t == 3) {
-				pic = Toolkit.getDefaultToolkit().getImage("Pretzel.png");
+				pic = Toolkit.getDefaultToolkit().getImage("Images/Pretzel.png");
 			}
 			else if(t == 4){
-				pic = Toolkit.getDefaultToolkit().getImage("Tomato.png");
+				pic = Toolkit.getDefaultToolkit().getImage("Images/Tomato.png");
 			}
 			else {
-				pic = Toolkit.getDefaultToolkit().getImage("Watermelon.png");
+				pic = Toolkit.getDefaultToolkit().getImage("Images/Watermelon.png");
 			}
 		}
 		catch(Exception e) {
